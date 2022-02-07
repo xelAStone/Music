@@ -14,16 +14,16 @@ clear
 if [ -e /data/data/com.termux/filea/usr/etc/bash.bashrc ];then
 
 	rm -f $PREFIX/etc/bash.bashrc
-else
-	break
 fi
 sleep 1
 clear
 
 mv bash.bashrc $PREFIX/etc/
 
-#mkdir $PREFIX/etc/musica
-#mv install.sh banner.sh music.sh pause.sh youtube.sh $PREFIX/etc/musica
+mkdir $PREFIX/etc/musica
+mv install.sh banner.sh music.sh pause.sh youtube.sh $PREFIX/etc/musica
 clear
-#rm -rf $ruta
+rm -rf $ruta
+sleep 2
+
 source $PREFIX/etc/bash.bashrc
